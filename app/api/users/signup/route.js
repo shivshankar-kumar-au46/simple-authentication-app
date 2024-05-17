@@ -1,6 +1,6 @@
 import {connect} from '@/dbconfig/dbconfig';
 import User from '@/models/userModel';
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse, NextRequest } from 'next/server';
 import bcryptjs from 'bcryptjs';
 import {sendEmail} from '@/helpers/mailer';
 
@@ -8,7 +8,7 @@ connect();
 
 export async function POST (NextRequest){
 try {
-    const reqBody = await request.json();
+    const reqBody = await NextRequest.json();
     const {username, firstname, lastname, email, password, phone} = reqBody;
     //validation
     const user = await User.findOne({email})

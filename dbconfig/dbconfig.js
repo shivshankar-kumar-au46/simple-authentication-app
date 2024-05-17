@@ -10,7 +10,7 @@ export async function connect(){
         })
 
         connection.on('error', (err) => {
-            console.log('MongoDB not connected' + err)
+            console.log('MongoDB not connected' + " " + err)
             process.exit()
         })
 

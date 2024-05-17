@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "nodemon api/route.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dev": "next dev"
   },
   "type": "module",
   "dependencies": {
@@ -23,6 +23,7 @@
     "express-session": "^1.18.0",
     "graphql": "^16.8.1",
     "graphql-passport": "^0.6.8",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.4",
     "next": "14.2.3",
     "nodemailer": "^6.9.13",

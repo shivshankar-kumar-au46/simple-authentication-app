@@ -22,7 +22,6 @@ export default function Login() {
   }
   const hanleLogin = (e) => {
     e.preventDefault();
-    alert("hi")
   };
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-no-repeat bg-cover bg-[url(https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)]">

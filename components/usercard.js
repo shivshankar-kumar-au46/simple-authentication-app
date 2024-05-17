@@ -1,10 +1,5 @@
 
-import { useState } from "react";
-import {users} from "../data/user.json";
 import CustomButton from "./customButton";
-
-console.log(users,'users')
-
 
 export default function UserCard(props) {
     const {userData, buttonOnClick, followData} = props;

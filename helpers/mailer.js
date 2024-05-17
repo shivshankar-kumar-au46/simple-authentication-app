@@ -28,7 +28,7 @@ var transporter = nodemailer.createTransport({
 });
 
       const mailOptions ={
-        from: 'shiv343@gmail.com', // sender address
+        from: 'kumarshiv417@gmail.com', // sender address
         to: email, // list of receivers
         subject: emailType === "verify" ? "verify your email" : "reset your password", // Subject line
         text: "Hello world?", // plain text body
